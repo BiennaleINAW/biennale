@@ -38,7 +38,10 @@
 
 <br>
 
-<%= link_to 'New Registration conference', new_admin_registration_conference_path %>
+<%= link_to 'New Registration conference', new_admin_registration_conference_path %> <br>
+ Importuj dane: 
+  <%= link_to "XLS"  ,  admin_registration_conferences_path(format: :xls) %>,
+  <%= link_to "CSV"  ,  admin_registration_conferences_path(format: :csv) %> 
 
 <script>
   $('#selectAll').click(function(){

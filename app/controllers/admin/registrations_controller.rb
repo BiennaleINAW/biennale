@@ -7,6 +7,11 @@ class Admin::RegistrationsController < ApplicationController
   # GET /admin/registrations.json
   def index
     @registrations = Registration.all
+    respond_to do |format|
+      format.html
+      format.csv {send_data @registrations.to_csv}
+      format.xls
+    end
   end
 
   # GET /admin/registrations/1

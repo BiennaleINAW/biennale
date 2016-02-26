@@ -39,6 +39,10 @@ class PagesController < ApplicationController
 		@zoom = General.first.map_zoom
 	end
 
+	def Program
+
+	end
+
 	def Terms_Contest
 	end
 

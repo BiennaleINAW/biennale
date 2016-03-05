@@ -104,7 +104,7 @@
 				  	gallery.empty();
 				  	$('.vote-number').html( votes);
 				  	data[1].forEach( function(object){
-				  		gallery.append("<img class='one-image' src= '"+ object.src.big.url +"'>");
+				  		gallery.append(" <a target='blank' href='http://"+ window.location.host + object.src.url +"'> <img class='one-image' src= '"+ object.src.big.url +"'> </a>");
 				  	})
 			    } // end success:
 			  }
